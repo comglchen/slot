@@ -29,6 +29,6 @@ export default {
 .title {
   text-align: center;
   width: 100%;
-  background-color: yellow;
+  background-color: green;
 }
 </style>
