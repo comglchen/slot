@@ -1,18 +1,17 @@
 <template>
-  <span>
-    <slot :food="food" :car="car" :phone="phone"></slot>
-  </span>
+  <div>
+    <div class="mydiv">
+      <h1 class="title">{{ title }}</h1>
+      <span v-for="(item, index) in categroy" :key="index">
+        {{ item }}
+      </span>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      phone: ["苹果", "华为", "三星"],
-      car: ["福特", "奔驰", "宝马"],
-      food: ["大白菜", "红萝卜", "西红柿"],
-    };
-  },
+  props: ["categroy", "title"],
 };
 </script>
 

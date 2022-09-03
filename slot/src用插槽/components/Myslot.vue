@@ -1,19 +1,11 @@
 <template>
   <span>
-    <slot :food="food" :car="car" :phone="phone"></slot>
+    <slot></slot>
   </span>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      phone: ["苹果", "华为", "三星"],
-      car: ["福特", "奔驰", "宝马"],
-      food: ["大白菜", "红萝卜", "西红柿"],
-    };
-  },
-};
+export default {};
 </script>
 
 <style>
